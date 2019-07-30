@@ -1,0 +1,25 @@
+{{#partial "styles"}}
+    <link rel='stylesheet' href='/styles.css'>
+{{/partial}}
+{{#partial "content"}}
+
+    <h1>Heroes</h1>
+
+    {{#if heros}}
+        {{#each heros}}
+            <div class="list" id="hero-bak">
+                <p>Name: <span>{{name}}</span></p>
+                <p>Age: {{age}}</p>
+                <p>Super Powers: {{power}}</p>
+                <p>Weakness: {{weakness}}</p>
+    {{id}}
+
+            </div>
+
+        {{/each}}
+        <p class="delete"><a href="/heros/delete">DELETE ALL Hero</a></p>
+    {{else}}
+        <p>No Heroes yet!</p>
+    {{/if}}
+{{/partial}}
+{{>layout.hbs}}

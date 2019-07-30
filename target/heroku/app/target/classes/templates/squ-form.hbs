@@ -1,0 +1,25 @@
+
+{{#partial "content"}}
+
+
+    <p  id="name1-1" >Add a new Squad</p>
+
+    <form action="/squad/new" method="POST" class="form-group form">
+        <div class="md-form">
+        <label id="name1-1" for="name"></label>
+        <input id="name" placeholder="Name:" name="name" type="text" class="form-control" required>
+        </div>
+        <div class="md-form">
+        <label id="name1 -1" for="cause"></label>
+        <input id="cause"placeholder="Cause:" name="cause" type="text" class="form-control" required>
+        </div>
+        <div class="md-form">
+        <label id="name1-1" for="maximum"></label>
+        <input id="maximum"placeholder="Maximum" name="maximum" type="text" class="form-control" required>
+        </div>
+        <button type="submit" >Add your Squad</button>
+    </form>
+
+{{/partial}}
+
+{{> layout.hbs}}

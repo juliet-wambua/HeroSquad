@@ -1,0 +1,59 @@
+{{#partial "styles"}}
+    <link rel='stylesheet' href='/styles.css'>
+{{/partial}}
+
+{{#partial "content"}}
+    {{#if editHero}}
+        <h1>Edit your Hero's entries!</h1>
+        <form action="/heroes/{{editHero.id}}/update" method="post" class="form-group">
+
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" value="{{editHero.name}}" class="form-control"><br>
+
+            <label for="age">Age</label>
+            <input id="age" name="age" type="text" value="{{editHero.age}}"class="form-control"><br>
+
+            <label for="specialPowers">Special Powers</label>
+            <input id="specialPowers" name="specialPowers" type="text" value="{{editHero.specialPowers}}" class="form-control"><br>
+
+            <label for="weakness">Weakness</label>
+            <input id="weakness" name="weakness" type="text" value="{{editHero.weakness}}" class="form-control"><br>
+
+            <button type="submit">Update Hero</button>
+        </form>
+    {{else}}
+
+        <h1>Add Hero!</h1>
+
+
+        <form action="/hero/new" method="POST" class="form-group form">
+            <div class="md-form">
+                <label id="name1-1" for="name"></label>
+                <input id="name"placeholder="Name:"  type="text" class="form-control" required>
+            </div>
+            <div class="md-form">
+                <label id="name1-1" for="age">:</label>
+                <input id="age" placeholder="Age:" type="text" class="form-control" required><br>
+            </div>
+            <div class="md-form">
+                <label id="name-1" for="power"></label>
+                <input id="power"  placeholder="Special Power:" type="text" class="form-control" required>
+            </div>
+            <div class="md-form">
+                <label id="name1-1" for="weakness"></label>
+                <input id="weakness" placeholder="Weakness:" type="text" class="form-control" required>
+            </div>
+            <button type="submit" >Add your Squad</button>
+        </form>
+
+
+        <div class="button-all">
+            <a href="/squad" >Click to Add to squad</a>
+
+            <a href="/heroes/list">Click to view your list of Heroes</a>
+        </div>
+
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}

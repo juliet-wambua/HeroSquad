@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Hero Squad{{/block}}</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    {{#block "styles"}}{{/block}}
+</head>
+<body>
+ <nav class="nav">
+    <button  type="button"> </button>
+    <div >
+        <h2 class="name1-1">Heroes</h2>
+        <ul class="ul" >
+            <li  class="nav-item active">
+                <a class="nav-link" href="/">Home
+                </a>
+            </li>
+            <li  class="nav-item">
+                <a class="nav-link" href="/hero">Add your Hero</a>
+            </li>
+            <li  class="nav-item">
+            <a class="nav-link" href="/squad">Squad</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container name1">
+    <div class="page-header">
+        <h1 id="name1-1">Welcome to Hero Squad.</h1>
+    </div>
+
+    <div class="col-md-12">
+        {{#block "content"}}
+
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
+    </body>
+    </html>
+{{/block}}
