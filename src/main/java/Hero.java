@@ -12,8 +12,7 @@ public class Hero {
     private LocalDateTime createdAt;
 
     public Hero(String name,int age, String power, String weakness){
-        this.name = name;
-        this.age = age;
+     
         this.power = power;
         this.weakness = weakness;
         this.createdAt = LocalDateTime.now();
