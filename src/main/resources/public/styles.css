@@ -1,18 +1,20 @@
 body{
-background-image: url('images/hand sword.jpg');
-text-align: center;
+    background-image: url('images/hand sword.jpg');
+    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-color:blue;
+    color:blue;
 }
 
 .nav{
-font-size:;
+font-size:1.6em;
 }
+
 nav ul li a{
     text-decoration:none;
     }
+
 .name1{
 color:blue;
 }
