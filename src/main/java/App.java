@@ -27,7 +27,6 @@ public class App {
             return new ModelAndView(model,"squ-form.hbs");
         },new HandlebarsTemplateEngine());
 
-
         post("/squad/new", (req, res) -> {
             Map<String, Object> model = new HashMap<>(); // I may be different from your code to account for generic “Objects”
             String name = req.queryParams("name");
@@ -70,7 +69,6 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             Hero.clearAllHero();
             return new ModelAndView(model, "success-h.hbs");
-        }, new HandlebarsTemplateEngine());
-
+            }, new HandlebarsTemplateEngine());
     }
 }
