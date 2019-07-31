@@ -7,7 +7,6 @@ HeroSquad is an Application that allows users create or to recruit a well-balanc
 
 ## Setup/Installation Requirements
 * git clone 
-* Change directory to Delani Studio
 * Open browser
 
 ## Known Bugs
