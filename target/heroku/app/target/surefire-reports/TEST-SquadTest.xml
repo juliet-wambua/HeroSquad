@@ -67,8 +67,8 @@
   <testcase classname="SquadTest" name="squad_instantiates_WithMaximum_int" time="0"/>
   <testcase classname="SquadTest" name="squad_getTasks_initiallyReturnsEmptyList_ArrayList" time="0"/>
   <testcase classname="SquadTest" name="squad_instantiates_Correctly_true" time="0"/>
-  <testcase classname="SquadTest" name="squad_squadInstantiates_withId_1" time="0"/>
+  <testcase classname="SquadTest" name="squad_squadInstantiates_withId_1" time="0.005"/>
   <testcase classname="SquadTest" name="squad_ReturnAll_instancesOfSquad_true" time="0"/>
   <testcase classname="SquadTest" name="squad_getsSquadWithSameId_Squad2" time="0"/>
-  <testcase classname="SquadTest" name="squad_able_toAddTaskToTheList_true" time="0.026"/>
+  <testcase classname="SquadTest" name="squad_able_toAddTaskToTheList_true" time="0.021"/>
 </testsuite>

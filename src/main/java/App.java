@@ -53,7 +53,8 @@ public class App {
         post("/hero/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             String name = request.queryParams("name");
-            int age = Integer.parseInt(request.queryParams("age"));
+//            int age = Integer.parseInt(request.queryParams("age"));
+            int age = 12;
             String specialPowers = request.queryParams("power");
             String weakness = request.queryParams("weakness");
             Hero newHero = new Hero(name, age, specialPowers, weakness);

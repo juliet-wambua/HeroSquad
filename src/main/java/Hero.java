@@ -20,9 +20,7 @@ public class Hero {
         instances.add(this);
         this.mId = instances.size();
     }
-    public String getName(){
-        return this.name;
-    }
+    public String getName(){return this.name; }
     public int getAge(){
         return this.age;
     }
