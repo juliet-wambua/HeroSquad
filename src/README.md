@@ -7,7 +7,7 @@ HeroSquad is an Application that allows users create or to recruit a well-balanc
 
 ## Setup/Installation Requirements
 * git clone
-* change directory 
+* change directory to HeroSquad
 * Open browser
 
 ## Known Bugs
